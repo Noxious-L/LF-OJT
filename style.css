@@ -312,6 +312,7 @@ nav {
     left: -1rem;
     z-index: -99;
     animation: wavebg 10s linear infinite;
+    user-select: none;
 }
 @keyframes wavebg {
     0% {
@@ -333,14 +334,14 @@ nav {
 .parent {
     position: absolute;
     top: 53.9rem;
-    width: 100%;
+    width: 98%;
     height: 209.2rem;
     z-index: 0;
     animation: bg-sticky linear;
     animation-timeline: view();
     animation-range: 0% cover 40%;
 }
-.side-con {
+.left-side-con {
     position: sticky;
     top: 10rem;
     left: 3rem;
@@ -350,6 +351,7 @@ nav {
     border-radius: 10px;
     background-color: #2e313161;
     overflow: hidden;
+    user-select: none;
 }   
 .liesofp {
     position: absolute;
@@ -429,7 +431,166 @@ nav {
     font-size: 1.5rem;
     font-family: "Red Rose";
 }
+/*                  RIGHT SIDE CONTAINER               */
 
+.right-side-con {
+    position: sticky;
+    float: right;
+    width: 15rem;
+    height: 42.5rem;
+    top: 7rem;
+    right: 0rem;  
+}
+.mlbb {
+    position: absolute;
+    top: 0rem;
+    width: 14.5rem;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    border: .5px solid black;
+    border-radius: 10px;
+    background-color: #2e313161;
+}
+.mlbb img {
+    position: relative;
+    margin-right: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.mlbb .mlimg {
+    position: relative;
+    top: .5rem;
+    width: 200px;
+    border-radius: 10px;
+    left: .5rem;
+}
+.mlbb .title {
+    position: absolute;
+    right: .5rem;
+    top: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Red Rose";
+    z-index: 2;
+}
+.mlbb .title2 {
+    position: absolute;
+    right: 1.75rem;
+    top: 2.1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Red Rose";
+}
+.mlbb .id {
+    position: absolute;
+    left: 3.2rem;
+    bottom: .75rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Ubuntu";
+    white-space: nowrap;
+}
+.codm {
+    position: absolute;
+    top: 15rem;
+    width: 14.5rem;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    border: .5px solid black;
+    border-radius: 10px;
+    background-color: #2e313161;
+}
+.codm img {
+    position: relative;
+    margin-right: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.codm .codmimg {
+    position: relative;
+    top: .5rem;
+    width: 200px;
+    border-radius: 10px;
+    left: .5rem;
+}
+.codm .title {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Red Rose";
+}
+.codm .title2 {
+    position: absolute;
+    right: 2.8rem;
+    top: 2.3rem;
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Red Rose";
+}
+.codm .id {
+    position: absolute;
+    left: .5rem;
+    bottom: .75rem;
+    color: white;
+    font-size: 1rem;
+    font-family: "Ubuntu";
+    
+    white-space: nowrap;
+}
+.pubgm {
+    position: absolute;
+    top: 30rem;
+    width: 14.5rem;
+    padding-left: 10px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    border: .5px solid black;
+    border-radius: 10px;
+    background-color: #2e313161;
+}
+.pubgm img {
+    position: relative;
+    margin-right: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.pubgm .pubgmimg {
+    position: relative;
+    top: .5px;
+    width: 200px;
+    border-radius: 10px;
+    left: .5rem;
+}
+.pubgm .title {
+    position: absolute;
+    right: .5rem;
+    top: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    font-family: "Red Rose";
+}
+.pubgm .title2 {
+    position: absolute;
+    right: 1.5rem;
+    top: 2.3rem;
+    color: white;
+    font-size: 1rem;
+    font-family: "Red Rose";
+}
+.pubgm .id {
+    position: absolute;
+    left: 3.3rem;
+    bottom: .75rem;
+    color: white;
+    font-size: 1rem;
+    font-family: "Ubuntu";
+    
+    white-space: nowrap;
+}
 
 @keyframes bg-sticky {
     from {
@@ -450,6 +611,8 @@ section {
     backdrop-filter: blur(5px);
     overflow: hidden;
 }
+/*                     PORTFOLIO                    */
+
 .home-con {
     position: absolute;
     right: 0;
@@ -457,7 +620,6 @@ section {
     width: 45rem;
     height: 45rem;
     overflow: hidden;
-    user-select: none;
 }
 .home-img {
     position: absolute;
@@ -469,6 +631,7 @@ section {
     background: url(imgs/ici.jpg);
     background-size: cover;
     border: 2px solid white;
+    user-select: none;
 }
 .home-img::after {
     position: absolute;
@@ -489,6 +652,7 @@ section {
     border-radius: 100px;
     overflow: hidden;
     border: 2px groove orange;
+    user-select: none;
 }
 .box1 img {
     position: absolute;
@@ -496,6 +660,7 @@ section {
     top: -17rem;
     width: 750px;
     rotate: 40deg;
+    user-select: none;
 }
 .home-con .box2 {
     position: absolute;
@@ -509,12 +674,14 @@ section {
     z-index: -1;
     overflow: hidden;
     text-transform: uppercase;
+    user-select: none;
 }
 .box2 .word1 {
     position: relative;
     display: block;
     left: 7rem;
     width: 200%;
+    user-select: none;
 }
 .word1 span{
     position: absolute;
@@ -539,6 +706,7 @@ section {
     display: block;
     width: 200%;
     right: 100%;
+    user-select: none;
 }
 .word2 span{
     position: absolute;
@@ -562,6 +730,7 @@ section {
     display: block;
     width: 200%;
     right: 100%;
+    user-select: none;
 }
 .word3 span{
     position: absolute;
@@ -589,12 +758,12 @@ section {
     width: 45rem;
     height: 45rem;
     overflow: hidden;
-    user-select: none;
 }
 .home-name img {
     position: absolute;
     bottom: 0;
     left: 15rem;
+    user-select: none;
 }
 .home-name h1 {
     position: relative;
@@ -604,6 +773,7 @@ section {
     font-family: "Red Rose", sans-serif;
     font-size: 5em;
     font-weight: 700;
+    user-select: none;
     animation: home-name-h1 1.2s linear;
 }
 @keyframes home-name-h1 {
@@ -621,6 +791,7 @@ section {
     -webkit-text-stroke: 1px black;
     font-family: "Kanit", sans-serif;
     font-size: 2.5em;
+    user-select: none;
     animation: home-name-span linear;
     animation-timeline: scroll(y);
 }
@@ -649,6 +820,7 @@ section {
     width: 100px;
     bottom: 0;
     right: 0;
+    user-select: none;
 }
 .home-name .mockingcat{
     position: absolute;
@@ -657,6 +829,7 @@ section {
     rotate: 62deg;
     width: 100px;
     z-index: 1;
+    user-select: none;
 }
 .home-name .bubbletea{
     position: absolute;
@@ -665,6 +838,7 @@ section {
     bottom: 25.3rem;
     z-index: 1;
     animation: bubbletea 8s ease-in;
+    user-select: none;
 }
 @keyframes bubbletea {
     from {
@@ -678,6 +852,7 @@ section {
     left: 1rem;
     border-radius: 50%;
     animation: ict-icon 2s linear infinite;
+    user-select: none;
 }
 @keyframes ict-icon {
     0%{
@@ -744,6 +919,7 @@ main-content {
     width: 7rem;
     top: -12rem;
     margin: 0 auto;
+    user-select: none;  
     animation: scroll-down-appear linear;
     animation-timeline: view();
     animation-range: 0% cover 40%;
@@ -773,7 +949,7 @@ main-content .about-con .aboutme{
     animation: aboutcon linear ;
     animation-timeline: view();
     animation-range: 0% cover 30%;
-    user-select: none;
+    
 }
 @keyframes aboutcon {
     from {
@@ -786,6 +962,7 @@ main-content .about-con .aboutme{
     left: 0;
     bottom: 0;
     rotate: 45deg;
+    user-select: none;
 }
 main-content .ici-loc {
     width: 1rem;
@@ -797,6 +974,7 @@ main-content .ici-logo {
     width: 4em;
     border: 1px solid #197292;
     border-radius: 50%;
+    user-select: none;
 }
 main-content .ici-link {
     position: absolute;
@@ -804,6 +982,7 @@ main-content .ici-link {
     bottom: 1.45em;
     font-size: 1.5em;
     font-family: "Red Rose", sans-serif;
+    user-select: none;
 }
 .ici-link:hover {
     opacity: 0.7;
@@ -823,6 +1002,7 @@ main-content .bul-logo {
     right: 17em;
     bottom: 1em;
     border-radius: 50%;
+    user-select: none;
 }
 main-content .aboutme h1 {
     text-transform: uppercase;
@@ -837,6 +1017,7 @@ main-content .bul-link {
     bottom: 1.4em;
     font-size: 1.5em;
     font-family: "Red Rose", sans-serif;    
+    user-select: none;
 }
 .bul-link:hover {
     opacity: 0.7;
@@ -865,6 +1046,7 @@ main-content .about-con h1 {
     cursor: pointer;
     font-family: "Sriracha", sans-serif;
     z-index: 1;
+    user-select: none;
 }
 .penguin {
     position: absolute;
@@ -889,7 +1071,7 @@ main-content .proscons {
     display: block;
     margin: 0 auto;
     width: 50rem;
-    user-select: none;
+    
 }
 main-content .pros {
     position: relative;
@@ -899,7 +1081,7 @@ main-content .pros {
     background-color: #0c0c0cc6;
     border-radius: 5em;
     color: white;
-    cursor: pointer;
+    cursor: text;
     text-align: center;
     transition: all 0.5s ease-in-out;
     animation: aboutcon linear ;
@@ -918,6 +1100,7 @@ main-content .proscons h1 {
     color: white;
     cursor: pointer;
     font-family: "Sriracha", sans-serif;
+    user-select: none;
 }
 main-content .pros:hover {
     background-color: #0C0C0C;
@@ -943,6 +1126,7 @@ main-content .cons {
     animation-timeline: view();
     animation-range: 0% cover 30%;
     -webkit-text-stroke: 0.25px rgba(255, 0, 0, 0.5);
+    user-select: none;
 }
 
 main-content .weakness-text {
@@ -1019,12 +1203,14 @@ main-content .con-blur:hover > :not(:hover){
     top: 75rem;
     left: 18rem;
     rotate: -65deg;
+    user-select: none;
 }
 .catpawprint1 {
     position: absolute;
     top: 75rem;
     right: 18.5rem;
     rotate: 65deg;
+    user-select: none;
 }
 main-content .background-status-con {
     position: relative;
@@ -1036,7 +1222,7 @@ main-content .background-status-con {
     border: 2px solid black;
     border-radius: 20px;
     text-align: center;
-    user-select: none;
+    
 }
 main-content .background-status-con h1 {
     font-size: 3rem;
@@ -1046,6 +1232,7 @@ main-content .background-status-con h1 {
     color: rgb(234, 223, 223);
     cursor: pointer;
     z-index: 1;
+    user-select: none;
     animation: educ-text 2s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 100%;
@@ -1055,6 +1242,7 @@ main-content .background-status-con h1 {
     bottom: 0;
     right: 1rem;
     width: 90px;
+    user-select: none;
 }
 .background-status-con .paw {
     position: absolute;
@@ -1062,6 +1250,7 @@ main-content .background-status-con h1 {
     bottom: 0;
     left: 0;
     rotate: 45deg;
+    user-select: none;
 }
 .background-status-con .paw1 {
     position: absolute;
@@ -1069,6 +1258,7 @@ main-content .background-status-con h1 {
     right: 0;
     top: 6rem;
     rotate: 240deg;
+    user-select: none;
 }
 @keyframes educ-text {
     from {
@@ -1084,7 +1274,7 @@ main-content .background-status-con h1 {
     position: relative;
     top: 10%;
     color: white;
-    user-select: text;
+    
 }
 .background-status-con span.school {
     display: block;
@@ -1094,7 +1284,7 @@ main-content .background-status-con h1 {
     animation: text-left-appear linear;
     animation-timeline: view();
     animation-range: cover cover 20%;
-    user-select: text;
+    
 }
 @keyframes text-left-appear {
     from {
@@ -1146,7 +1336,7 @@ main-content .likes {
     border-radius: 20px;
     text-align: center;
     z-index: 1;
-    user-select: none;
+    
 }
 .likes .catpopcorn {
     position: absolute;
@@ -1154,6 +1344,7 @@ main-content .likes {
     right: 12rem;
     top: 10px;
     z-index: -1;
+    user-select: none;
 }
 
 .likes h1 {
@@ -1164,6 +1355,7 @@ main-content .likes {
     text-align: center;
     border-bottom: 2px solid green;
     border-radius: 25%;
+    user-select: none;
     font-family: "Red Rose", sans-serif;
     background-image: linear-gradient(to right, #caefd7, #f5bfd7, #abc9e9);
     -webkit-background-clip: text;
@@ -1190,7 +1382,7 @@ main-content .likes {
     animation: likes-txt linear;
     animation-timeline: view();
     animation-range: 0% cover 30%;
-    user-select: text;
+    
 }
 @keyframes likes-txt {
     from {
@@ -1207,6 +1399,7 @@ main-content .likes {
     height: 180px;
     border: 1px solid black;
     border-radius: 10px;
+    user-select: none;
     animation: likes-img linear;
     animation-timeline: view();
     animation-range: 0% cover 75%;
@@ -1229,6 +1422,7 @@ main-content .likes {
     -webkit-text-stroke: 1px black;
     z-index: 1;
     cursor: pointer;
+    user-select: none;
 }
 .ikaw .heart {
     position: absolute;
@@ -1260,22 +1454,25 @@ main-content .likes {
     position: absolute;
     left: 4.55em;
     bottom: 0;
-    width: 130px;
+    width: 100px;
     border-radius: 20px;
 }
 .ikaw .g2 {
     position: absolute;
     bottom: 0;
+    width: 100px;
 }
 .ikaw .g3 {
     position: absolute;
     bottom: 0;
     right: 3em;
+    width: 100px;
 }
 .ikaw .g4 {
     position: absolute;
     bottom: 0;
     right: 4.5em;
+    width: 100px;
 }
 .likes hr {
     position: relative;
@@ -1291,16 +1488,18 @@ main-content .imagemap {
     background-image: url(bg/redwave.svg);
     background-color: white;
     background-size: cover;
+    user-select: none;
     animation: contact-frames linear;
     animation-timeline: view();
     animation-range: 0% cover;
-    user-select: none;
+    
 }
 main-content .imgmap-con {
     position: absolute;
     top: 16rem;
     left: 17.5rem;
     z-index: 1;
+    user-select: none;
 }
 .imagemap h1 {
     position: relative;
@@ -1309,6 +1508,7 @@ main-content .imgmap-con {
     font-family: "Chewy";
     font-size: 8.5rem;
     top: 7rem;
+    user-select: none;
     -webkit-text-stroke: 0.01px black;
     animation: imagemap-h1 linear;
     animation-timeline: view();
@@ -1323,6 +1523,7 @@ main-content .imgmap-con {
 .imgmap-con img {
     border: 1px solid black;
     border-radius: 20px;
+    user-select: none;
 }
 .imagemap .jolligirl {
     position: absolute;
@@ -1333,6 +1534,7 @@ main-content .imgmap-con {
     animation-timeline: view();
     animation-range: 0% cover 50%;
     z-index: 1;
+    user-select: none;
 }
 @keyframes jolligirl {
     from {
@@ -1349,6 +1551,7 @@ main-content .imgmap-con {
     animation-timeline: view();
     animation-range: 0% cover 60%;
     z-index: 1;
+    user-select: none;
 }
 @keyframes chickennom {
     from {
@@ -1367,7 +1570,7 @@ main-content .imgmap-con {
     animation-timeline: view();
     animation-range: 0% cover 15%;
     z-index: 0;
-    user-select: text;
+    
 }
 @keyframes imagemap-h2 {
     from {
@@ -1390,6 +1593,7 @@ main-content .table {
     bottom: 0;
     z-index: -1;
     user-select: none;
+    
 }
 .table .menutable {
     position: absolute;
@@ -1437,6 +1641,7 @@ main-content .table {
     font-size: 9rem;
     -webkit-text-stroke: 2px red;
     color: white;
+    user-select: none;
 }
 /*                              LIST                         */
 main-content .list {
@@ -1445,12 +1650,13 @@ main-content .list {
     height: 100vh;
     background-color: white;
     z-index: 1;
-    user-select: none;
+    
 }
 .list .boxupper {
     position: absolute;
     top: 0;
     z-index: -1;
+    user-select: none;
 }
 .list-bs {
     position: absolute;
@@ -1467,9 +1673,10 @@ main-content .list {
 }
 .list-bs ol img {
     width: 220px;
+    user-select: none;
     animation: list-ol-img-appear linear;
     animation-timeline: view();
-    animation-range: 0% cover 20%;
+    animation-range: 0% cover 15%;
 }
 @keyframes list-ol-img-appear {
     from {
@@ -1491,12 +1698,78 @@ main-content .list {
 }
 .list-solo ol img {
     width: 220px;
+    user-select: none;
     animation: list-ol-img1-appear linear;
     animation-timeline: view();
-    animation-range: 0% cover 20%;
+    animation-range: 0% cover 15%;
 }
 @keyframes list-ol-img1-appear {
     from {
         transform: translateX(200px);
     }
+}
+/*                             JOLLIBEE LYRICS                       */
+
+.hr-lyrics {
+    position: relative;
+    display: block;
+    top: -.2rem;
+    width: 20rem;
+    height: 8px;
+    margin: 0 auto;
+    background-color: #0088a9;
+    z-index: 2;
+}
+main-content .jollibee-lyrics-con {
+    position: relative;
+    height: 100vh;
+    background-image: url(bg/jollibee.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.lyrics-main {
+    position: absolute;
+    top: 9rem;
+    left: 23rem;
+    width: 50rem;
+    height: 43rem;
+    border: 1px groove black;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.492);
+    backdrop-filter: blur(5px);
+}
+.lyrics-main h1 {
+    position: relative;
+    left: 14rem;
+    top: .5rem;
+    font-size: 3rem;
+    font-family: "Red Rose";
+    white-space: nowrap;
+}
+.lyrics-main h2 {
+    position: relative;
+    left: 17rem;
+    top: -.5rem;
+    font-size: 2rem;
+    font-family: "Red Rose";
+    white-space: nowrap;
+}
+.lyrics-main pre {
+    text-align: center;
+    position: relative;
+    top: 1rem;
+    font-size: 1.3em;
+    font-family: "Kanit";
+}
+.lyrics-main audio {
+    position: relative;
+    display: block;
+    top: 1rem;
+    margin: 0 auto;
+}
+.cooldoge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
