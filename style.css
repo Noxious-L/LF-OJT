@@ -872,7 +872,7 @@ section {
     }
 }
 
-hr {
+.hr-animation {
     position: relative;
     top: -4rem;
     border-top: 4px solid #0088a9;
@@ -1714,11 +1714,24 @@ main-content .list {
     position: relative;
     display: block;
     top: -.2rem;
-    width: 20rem;
-    height: 8px;
+    width: 0;
+    height: 7px;
     margin: 0 auto;
-    background-color: #0088a9;
+    background-color: #b10404;
     z-index: 2;
+    animation: hr-lyrics linear;
+    animation-timeline: view();
+    animation-range: 0% cover 60%;
+}
+@keyframes hr-lyrics {
+    from {
+        width: 80%;
+        transform: scaleX(1);
+    }
+    to {
+        width: 50%;
+        transform: scaleX(0);
+    }
 }
 main-content .jollibee-lyrics-con {
     position: relative;
@@ -1729,7 +1742,7 @@ main-content .jollibee-lyrics-con {
 }
 .lyrics-main {
     position: absolute;
-    top: 9rem;
+    top: 7rem;
     left: 23rem;
     width: 50rem;
     height: 43rem;
@@ -1772,4 +1785,499 @@ main-content .jollibee-lyrics-con {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+.catdancing {
+    position: absolute;
+    width: 80px;
+    left: 7rem;
+}
+.dogdancing {
+    position: absolute;
+    bottom: 0;
+    right: 3rem;
+    width: 70px;
+}
+.skeletondancing {
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+    width: 70px;
+}
+/*  CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT*/
+
+footer {
+    position: relative;
+    background-image: url(catbg.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+.contact {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+.contact h1 {
+    position: absolute;
+    top: 8rem;
+    left: 15rem;
+    color: white;
+    font-size: 5rem;
+    font-family: "Kanit";
+    text-shadow: 2px 2px 8px black;
+    -webkit-text-stroke: 2px black;
+    user-select: none;
+}
+.social-media-con {
+    position: absolute;
+    top: 21rem;
+    left: 6rem;
+    width: 80em;
+    height: 18em; 
+    user-select: none;
+}
+.social-media-con .items {
+    position: relative;
+    color: black;
+    background-color: #F0F8FF;
+    display: inline-table;
+    width: 16rem;
+    height: 15rem;
+    margin-left: 60px;
+    text-align: center;
+    border-radius: 20px;
+    border: 3px groove black;
+    z-index: 1;
+    overflow: hidden;
+}
+.item1 {
+    position: relative;
+    top: -2.2rem;
+}
+.item2 {
+    position: relative;
+    top: -1rem;
+}
+.item3 {
+    position: relative;
+    top: 0.05rem;
+}
+.item4 {
+    position: relative;
+    top: -2.65rem;
+}
+.follow {
+    position: absolute;
+    top: -4rem;
+    left: 3.1rem;
+    color: white;
+    padding: 10px;
+    background-color: black;
+    border-radius: 30px;
+    user-select: none;
+}
+.follow:hover {
+    color: #89c4f4;
+}
+.items .text {
+    position: absolute;
+    top: 5rem;
+    left: -1rem;
+    opacity: 0;
+    color: black;
+    font-family: "Ubuntu";
+}
+.item1 .fbwave {
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    background-color: #0099ff;
+    border-radius: 15px;
+    user-select: none;
+}
+.item1:hover {
+    transition: all 1s ease-in-out;
+    height: 20rem;
+}
+.item1:hover .follow {
+    transition: all 1s ease-in-out;
+    top: 1.2rem;
+}
+.item1:hover .text {
+    transition: all .75s ease-in-out;
+    left: 2em;
+    font-size: 1em;
+    transition-delay: .5s;
+    opacity: 1;
+}
+.item1:hover .fbwave {
+    transition: all 1s ease-in-out;
+    height: 11rem;
+}
+.item1:hover .fbwave .wave {
+    transition: all 1s ease-in-out;
+    top: 10rem;
+}
+.item1:hover .icon {
+    transition: all 1s ease-in-out;
+    top: 9rem;
+}
+.item1:hover .logotext {
+    transition: all 1s ease-in-out;
+    top: 10rem;
+}
+.fbwave .wave {
+    position: relative;
+    top: 3.9rem;
+    user-select: none;
+}
+.item1 .icon {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 3rem;
+    width: 80px;
+    border: 2px groove black;
+    border-radius: 50%;
+    z-index: 1;
+    user-select: none;
+}
+.item1 .logotext {
+    position: relative;
+    top: 4rem;
+    width: 200px;
+    user-select: none;
+}
+.item2 .tgwave {
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    background-color: #a2d9ff;
+    border-radius: 15px;
+    user-select: none;
+}
+.tgwave .wave {
+    position: relative;
+    top: 3.9rem;
+    user-select: none;
+    user-select: none;
+}
+.item2 .icon {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 3rem;
+    width: 80px;
+    border: 2px groove black;
+    border-radius: 50%;
+    z-index: 1;
+    user-select: none;
+}
+.item2 .logotext {
+    position: relative;
+    top: 4rem;
+    width: 200px;
+    user-select: none;
+}
+.item2:hover {
+    transition: all 1s ease-in-out;
+    height: 20rem;
+}
+.item2:hover .follow {
+    transition: all 1s ease-in-out;
+    top: 1.2rem;
+}
+.item2:hover .text {
+    transition: all .75s ease-in-out;
+    left: 1.2rem;
+    font-size: 1em;
+    transition-delay: .5s;
+    opacity: 1;
+}
+.item2:hover .tgwave {
+    transition: all 1s ease-in-out;
+    height: 11rem;
+}
+.item2:hover .tgwave .wave {
+    transition: all 1s ease-in-out;
+    top: 10rem;
+}
+.item2:hover .icon {
+    transition: all 1s ease-in-out;
+    top: 9rem;
+}
+.item2:hover .logotext {
+    transition: all 1s ease-in-out;
+    top: 10rem;
+}
+.item3 .twtwave {
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    background-color: #273036;
+    border-radius: 15px;
+    user-select: none;
+}
+.twtwave .wave {
+    position: relative;
+    top: 3.9rem;
+    user-select: none;
+}
+.item3:hover {
+    transition: all 1s ease-in-out;
+    height: 20rem;
+}
+.item3:hover .follow {
+    transition: all 1s ease-in-out;
+    top: 1.2rem;
+}
+.item3:hover .text {
+    transition: all .75s ease-in-out;
+    left: 3.6rem;
+    font-size: 1em;
+    transition-delay: .5s;
+    opacity: 1;
+    color: white;
+}
+.item3:hover .twtwave {
+    transition: all 1s ease-in-out;
+    height: 11rem;
+}
+.item3:hover .twtwave .wave {
+    transition: all 1s ease-in-out;
+    top: 10rem;
+}
+.item3:hover .icon {
+    transition: all 1s ease-in-out;
+    top: 9rem;
+}
+.item3:hover .logotext {
+    transition: all 1s ease-in-out;
+    top: 8.5rem;
+}
+.item3 .icon {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 3rem;
+    width: 80px;
+    border: 2px groove white;
+    border-radius: 50%;
+    z-index: 1;
+    user-select: none;
+}
+.item3 .logotext {
+    position: relative;
+    font-size: 5rem;
+    color: black;
+    top: 3rem;
+    font-family: "Red Rose";
+    user-select: none;
+}
+.item4 .dcwave {
+    position: absolute;
+    width: 100%;
+    height: 5rem;
+    background-color: #5000ca;
+    border-radius: 15px;
+    user-select: none;
+}
+.dcwave .wave {
+    position: relative;
+    top: 3.9rem;
+    user-select: none;
+}
+.contact span {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: .8rem;
+    user-select: none;
+}
+.item4 .icon {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 3rem;
+    width: 80px;
+    border: 2px groove black;
+    border-radius: 50%;
+    z-index: 1;
+    user-select: none;
+}
+.item4 .logotext {
+    position: relative;
+    top: 4rem;
+    width: 200px;
+    user-select: none;
+}
+.item4:hover {
+    transition: all 1s ease-in-out;
+    height: 20rem;
+}
+.item4:hover .follow {
+    transition: all 1s ease-in-out;
+    top: 1.2rem;
+    left: 4rem;
+}
+.item4:hover .text {
+    transition: all .75s ease-in-out;
+    left: 4rem;
+    font-size: 1em;
+    transition-delay: .5s;
+    opacity: 1;
+    color: white;
+}
+.item4:hover .dcwave {
+    transition: all 1s ease-in-out;
+    height: 11rem;
+}
+.item4:hover .dcwave .wave {
+    transition: all 1s ease-in-out;
+    top: 10rem;
+}
+.item4:hover .icon {
+    transition: all 1s ease-in-out;
+    top: 9rem;
+}
+.item4:hover .logotext {
+    transition: all 1s ease-in-out;
+    top: 10rem;
+}
+.item4 .icon {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 3rem;
+    width: 80px;
+    border: 2px groove white;
+    border-radius: 50%;
+    z-index: 1;
+}
+.item4 .logotext {
+    position: relative;
+    font-size: 5rem;
+    color: black;
+    top: 4.5rem;
+    font-family: "Red Rose";
+}
+.hr-contact {
+    position: absolute;
+    top: 21rem;
+    width: 70%;
+    height: 5px;
+    border-color: black;
+}
+.hr-contact1 {
+    position: absolute;
+    top: 21.5rem;
+    width: 65%;
+    height: 5px;
+    border-color: black;
+}
+.address-email {
+    position: absolute;
+    bottom: 2rem;
+    left: 8rem;
+    width: 48rem;
+    height: 9rem;
+}
+.address-email .email1 {
+    position: absolute;
+    top: .25rem;
+    right: 0;
+    color: white;
+    font-size: 1rem;
+    user-select: all;
+}
+.address-email .email2 {
+    position: absolute;
+    top: 2.1rem;
+    color: white;
+    font-size: 1rem;
+    right: 0;
+    user-select: all;
+}
+.address-email .email3 {
+    position: absolute;
+    top: 3.9rem;
+    color: white;
+    font-size: 1rem;
+    right: 0;
+    user-select: all;
+}
+.address-email .address {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.2rem;
+}
+.address1 {
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    font-size: 1rem;
+}
+.hr-phone {
+    position: absolute;
+    width: 20rem;
+    top: 5rem;
+    border-color: black;
+    height: 5px;
+}
+.phoneno {
+    position: absolute;
+    top: 5rem;
+    width: 41rem;
+}
+.phoneicon{
+    position: absolute;
+    width: 20px;
+    top: 1rem;
+}
+.phonetext {
+    position: absolute;
+    top: 1.1rem;
+    left: 1.5rem;
+}
+.smart {
+    position: absolute;
+    width: 70px;
+    top: 2.6rem;
+    left: 2rem;
+}
+.smartno {
+    position: absolute;
+    left: 7rem;
+    top: 2.85rem;
+    user-select: text;
+}
+.dataplan {
+    position: absolute;
+    top: 2.825rem;
+    left: 13rem;
+    white-space: nowrap;
+    font-size: .8rem;
+}
+.dito {
+    position: absolute;
+    left: 22rem;
+    top: 2.68rem;
+    width: 50px;
+}
+.ditono {
+    position: absolute;
+    left: 26rem;
+    top: 2.8rem;
+    user-select: text;
+}
+.dataplan1 {
+    position: absolute;
+    top: 2.75rem;
+    left: 32rem;
+    white-space: nowrap;
+    font-size: .8rem;
 }
