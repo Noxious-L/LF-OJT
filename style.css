@@ -1886,6 +1886,7 @@ footer {
     position: absolute;
     top: 5rem;
     left: -1rem;
+    font-size: 1em;
     opacity: 0;
     color: black;
     font-family: "Ubuntu";
