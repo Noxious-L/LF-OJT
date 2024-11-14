@@ -340,7 +340,6 @@ nav {
     width: 98%;
     height: 209.2rem;
     z-index: 0;
-    background-color: #0088a9;
     animation: bg-sticky linear;
     animation-timeline: view();
     animation-range: 0% cover 40%;
@@ -729,7 +728,8 @@ section {
     100% {
         right: -150%;
     }
-}.box2 .word3 {
+}
+.box2 .word3 {
     position: relative;
     display: block;
     width: 200%;
@@ -2279,7 +2279,251 @@ footer {
         height: 9rem;
     }
 }
-@media  screen and (max-width: 420px) {
+@media  screen and (max-width: 600px) {
+    section {
+        position: relative;
+        background-size: cover;
+        height: 32rem;
+        width: 85%;
+        margin: 8rem auto;
+        box-shadow: 3px 5px 5px black;
+        border: 0.5px solid black;
+        border-radius: 10px;
+        background-size: cover;
+        background-color: #cdd1e4;
+        backdrop-filter: blur(5px);
+        overflow: hidden;
+    }
+    .bg-mp4 video {
+        display: none;
+    }
+    .home-con {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45rem;
+        height: 35rem;
+        overflow: hidden;
+    }
+    .home-img {
+        position: absolute;
+        right: 7rem;
+        top: 6rem;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background: url(imgs/ici.jpg);
+        background-size: cover;
+        border: 2px solid white;
+        user-select: none;
+    }
+    .home-img::after {
+        content: '';
+    }
+    .home-con .box1 {
+        position: relative;
+        right: -33rem;
+        top: -2rem;
+        width: 15rem;
+        height: 10rem;
+        rotate: -40deg;
+        z-index: -2;
+        background-color: #0088a9;
+        border-radius: 100px;
+        overflow: hidden;
+        border: 2px groove orange;
+        user-select: none;
+    }
+    .box1 img {
+        position: absolute;
+        left: -10rem;
+        top: -17rem;
+        scale: 0.7;
+        width: 700px;
+        rotate: 40deg;
+        user-select: none;
+    }
+    .home-con .box2 {
+        position: absolute;
+        right: -8rem;
+        top: 6rem;
+        width: 20rem;
+        height: 6rem;
+        background-color: #01017a;  
+        border-radius: 100px;
+        rotate: -40deg;
+        z-index: -1;
+        overflow: hidden;
+        text-transform: uppercase;
+        user-select: none;
+    }
+    .box2 .word1 {
+        position: relative;
+        display: block;
+        left: 7rem;
+        width: 295%;
+        user-select: none;
+        white-space: nowrap;
+    }
+    .word1 span{
+        position: absolute;
+        color: white;
+        font-family: "Red Rose";
+        font-size: 3rem;
+        width: 150%;
+        float: left;
+        top: 2.8rem;
+        animation: word1 5s linear infinite;
+    }
+    @keyframes word1 {
+        0% {
+            left: 30%;
+        }
+        100% {
+            left: -120%;
+        }
+    }
+    .box2 .word2 {
+        position: relative;
+        display: block;
+        width: 200%;
+        right: 190%;
+        user-select: none;
+        white-space: nowrap;
+    }
+    .word2 span{
+        position: absolute;
+        color: white;
+        font-family: "Red Rose";
+        font-size: 3rem;
+        width: 150%;
+        float: right;
+        top: 0rem;
+        animation: word2 7s linear infinite;
+    }
+    @keyframes word2 {
+        0% {
+            right: 0;
+        }
+        100% {
+            right: -190%;
+        }
+    }
+    .box2 .word3 {
+        position: relative;
+        display: block;
+        width: 200%;
+        right: 100%;
+        user-select: none;
+    }
+    .word3 span{
+        position: absolute;
+        color: white;
+        font-family: "Red Rose";
+        font-size: 3rem;
+        width: 150%;
+        float: right;
+        top: 6rem;
+        animation: word2 8s linear infinite;
+    }
+    
+    .home-name {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 45rem;
+        height: 42rem;
+        overflow: hidden;
+    }
+    .home-name img {
+        position: absolute;
+        bottom: 0;
+        left: 15rem;
+        user-select: none;
+    }
+    .home-name h1 {
+        position: relative;
+        top: 17rem;
+        left: 1.5rem;
+        color: #2e3131;
+        font-family: "Red Rose", sans-serif;
+        font-size: 2.5em;
+        font-weight: 700;
+        user-select: none;
+        animation: home-name-h1 1.2s linear;
+    }
+    .home-name span {
+        position: relative;
+        display: block;
+        top: 16.2rem;
+        left: 3rem;
+        color: orange;
+        -webkit-text-stroke: 1px black;
+        font-family: "Kanit", sans-serif;
+        font-size: 1.2em;
+        user-select: none;
+        animation: home-name-span 1.2s linear;
+    }
+    .home-name p {
+        text-align: left;
+        position: relative;
+        left: 1rem;
+        top: 15.5rem;
+        width: 310px;
+        font-size: 12px;
+        animation: home-name-p 0.8s linear;
+    }
+    @keyframes home-name-p {
+        from {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+    }
+    .home-con .nekowait {
+        position: absolute;
+        width: 50px;
+        bottom: 3rem;
+        right: 0;
+        user-select: none;
+    }
+    .home-name .mockingcat{
+        position: absolute;
+        left: -.75rem;
+        top: 7rem;
+        rotate: 62deg;
+        width: 60px;
+        z-index: 1;
+        user-select: none;
+    }
+    .home-name .bubbletea{
+        position: absolute;
+        width: 50px;
+        left: 12.3rem;
+        bottom: 23.5rem;
+        z-index: 1;
+        animation: bubbletea 8s ease-in;
+        user-select: none;
+    }
+    .home-name .ict-icon {
+        position: absolute;
+        width: 50px;
+        top: 1rem;
+        left: 1rem;
+        border-radius: 50%;
+        animation: ict-icon 2s linear infinite;
+        user-select: none;
+    }
+    .wavebg {
+        position: absolute;
+        bottom: -2rem;
+        width: 500px;
+        left: 50rem;
+        z-index: -99;
+        animation: wavebg 10s linear infinite;
+        user-select: none;
+    }
+    /*                      NAVIGATION                     */
+
     .profile-card {
         position: absolute;
         display: none;
@@ -2425,7 +2669,7 @@ footer {
     .logo {
         cursor: pointer;
         position: absolute;
-        left: 9%;
+        left: 30%;
         bottom: 2rem;
         color: #33a8b8;
         font-size: 100%;
@@ -2451,7 +2695,7 @@ footer {
     nav {
         position: relative;
         transition: transform 0.5s;
-        left: -2.4rem;
+        left: 0rem;
         font-size: .8em;
         
     }
