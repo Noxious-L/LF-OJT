@@ -268,13 +268,6 @@ nav ul li:hover ul.dropbox {
     rotate: 40deg;
     z-index: 1;
 }
-.profile-card .helekapter {
-    position: absolute;
-    width: 50px;
-    top: 11.5rem;
-    right: 0;
-    z-index: -1;
-}
 header {
     position: fixed;
     width: 100%;
@@ -304,8 +297,8 @@ nav {
     left: 0;
     top: 1rem;
     width: 100%;
-    height: 55rem;
-    background-size: contain;
+    height: 100%;
+    background-size: cover;
     opacity: 0.3;
     z-index: -1;
 }
@@ -901,7 +894,7 @@ section {
     position: absolute;
     top: -2.5rem;
     width: 100%;
-    height: 450vh;
+    height: 470vh;
     z-index: -1;
     background-color: rgba(0, 0, 0, 0.87);
 }
@@ -2280,6 +2273,283 @@ footer {
     }
 }
 @media  screen and (max-width: 600px) {
+    /*                LEFT SIDE CONTAINER     */
+
+    .parent {
+        position: absolute;
+        top: 53.9rem;
+        width: 98%;
+        height: 209.2rem;
+        z-index: 0;
+        animation: bg-sticky linear;
+        animation-timeline: view();
+        animation-range: 0% cover 40%;
+    }
+    .left-side-con {
+        position: sticky;
+        top: 10rem;
+        left: 3rem;
+        width: 13rem;
+        height: 41rem;
+        border: .5px solid black;
+        border-radius: 10px;
+        background-color: #2e313161;
+        overflow: hidden;
+        user-select: none;
+    }   
+    .liesofp {
+        position: absolute;
+        left: 1.5rem;
+        top: 1rem;
+        width: 150px;
+        overflow: hidden;
+    }
+    .liesofp img {
+        width: 150px;
+        height: 80px;
+        border-radius: 20px;
+    }
+    .liesofp .done {
+        margin-left: 4rem;
+        width: 35px;
+        height: 35px;
+    }
+    .godofwar {
+        position: absolute;
+        left: 1.7rem;
+        top: 9rem;
+    }
+    .godofwar img {
+        width: 150px;
+        height: 80px;
+        border-radius: 10px;
+    }
+    .godofwar .done {
+        margin-left: 4rem;
+        width: 35px;
+        height: 35px;
+    }
+    .spider-man {
+        position: absolute;
+        left: 1.7rem;
+        top: 17rem;
+    }
+    .spider-man img {
+        width: 150px;
+        height: 80px;
+        border-radius: 10px;
+    }
+    .spider-man .done {
+        margin-left: 4rem;
+        width: 35px;
+        height: 35px;
+    }
+    .spider-man-miles {
+        position: absolute;
+        left: 1.7rem;
+        top: 25rem;
+    }
+    .spider-man-miles img {
+        width: 150px;
+        height: 80px;
+        border-radius: 10px;
+    }
+    .spider-man-miles .done {
+        margin-left: 4rem;
+        width: 35px;
+        height: 35px;
+    }
+    .ghostoftsushima {
+        position: absolute;
+        left: 1.7rem;
+        top: 33rem;
+    }
+    .ghostoftsushima img {
+        width: 150px;
+        height: 80px;
+        border-radius: 10px;
+    }
+    .ghostoftsushima span {
+        color: white;
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        font-family: "Red Rose";
+    }
+
+    /*                ABOUT CONTAINER         */
+    main-content .about-con .aboutme{
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        padding: 1rem;
+        top: 10em;
+        width: 20em;
+        height: 15em;
+        border-radius: 2em;
+        text-align: center;
+        background-color: #2e313185;
+        z-index: 1;
+        animation: aboutcon linear ;
+        animation-timeline: view();
+        animation-range: 0% cover 30%;
+        
+    }
+    @keyframes aboutcon {
+        from {
+            scale: 0.8;
+        }
+    }
+    .aboutme .pawprint {
+        position: absolute;
+        width: 30px;
+        left: 1em;
+        bottom: 1em;
+        rotate: 45deg;
+        user-select: none;
+    }
+    main-content .ici-loc {
+        width: 1rem;
+    }
+    main-content .ici-logo {
+        position: absolute;
+        left: 10.5rem;
+        bottom: 1em;
+        width: 2em;
+        border: 1px solid #197292;
+        border-radius: 50%;
+        user-select: none;
+    }
+    main-content .ici-link {
+        position: absolute;
+        right: -3em;
+        bottom: 1.6em;
+        font-size: .9em;
+        font-family: "Red Rose", sans-serif;
+        user-select: none;
+    }
+    .ici-link:hover {
+        opacity: 0.7;
+    }
+    .ici-loc a .hover-icon1 {
+        position: absolute;
+        width: 20px;
+        left: 5.6em;
+        display: none;
+    }
+    .ici-loc a:hover .hover-icon1 {
+        display: block;
+    }
+    main-content .bul-logo {
+        position: absolute;
+        width: 2em;
+        left: 3.5em;
+        bottom: 1em;
+        border-radius: 50%;
+        user-select: none;
+    }
+    main-content .aboutme h1 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-shadow: 3px 4px 10px black;
+        z-index: 2;
+    }
+    main-content .bul-link {
+        position: absolute;
+        left: 2.5em;
+        bottom: 1.4em;
+        font-size: 1em;
+        font-family: "Red Rose", sans-serif;    
+        user-select: none;
+    }
+    .bul-link:hover {
+        opacity: 0.7;
+    }
+    .bul-link .hover-icon2 {
+        position: absolute;
+        left: 3.65em;
+        width: 20px;
+        display: none;
+    }
+    .bul-link:hover .hover-icon2 {
+        display: block;
+    }
+    main-content .aboutme-text {
+        position: relative;
+        color: white;
+        top: 0.5rem;
+        font-size: .8rem;
+        line-height: 1.3em;
+    }
+    main-content .about-con h1 {
+        text-align: center;
+        margin-bottom: 0.25em;
+        font-size: 1.8em;
+        color: white;
+        cursor: pointer;
+        font-family: "Sriracha", sans-serif;
+        z-index: 1;
+        user-select: none;
+    }
+    .penguin {
+        position: absolute;
+        right: 0;
+        top: 1em;
+        width: 35px;
+        z-index: -1;
+        animation: penguin-running 12s linear infinite;
+    }
+    @keyframes penguin-running {
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(-280px);
+        }
+    }
+
+    /* ABOUT ME */
+
+    .blackbg {
+        position: absolute;
+        top: -2.5rem;
+        width: 100%;
+        height: 460vh;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.87);
+    }
+    .whitebg {
+        position: absolute;
+        top: 62.9rem;
+        width: 100%;
+        height: 269vh;
+    }
+    main-content {
+        position: relative;
+        margin: 0 auto;
+        width: min(100%, 950px);
+     }
+     main-content .arrow-down {
+        position: relative;
+        display: block;
+        width: 7rem;
+        top: -12rem;
+        margin: 0 auto;
+        user-select: none;  
+        animation: scroll-down-appear linear;
+        animation-timeline: view();
+        animation-range: 0% cover 40%;
+     }
+     @keyframes scroll-down-appear {
+        from {
+            transform: translateY(-100px)
+        }
+        to {
+            transform: translateY(0)
+        }
+     }
+
+    /*                             SECTION                       */
+
     section {
         position: relative;
         background-size: cover;
