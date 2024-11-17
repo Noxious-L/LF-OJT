@@ -597,6 +597,7 @@ section {
     position: relative;
     background-size: cover;
     height: 42em;
+    width: 75em;
     margin: 8rem auto;
     box-shadow: 3px 5px 5px black;
     border: 0.5px solid black;
@@ -2270,6 +2271,140 @@ footer {
     }
 }
 @media  screen and (max-width: 600px) {
+    /*                     STRENGTH AND WEAKNESSES               */
+
+    main-content .proscons {
+        position: relative;
+        top: 11em;
+        display: block;
+        margin: 0 auto;
+        width: 50rem;
+        
+    }
+    main-content .pros {
+        position: relative;
+        width: 10em;
+        height: 10em;
+        left: 2rem;
+        background-color: #0c0c0cc6;
+        border-radius: 20px;
+        color: white;
+        cursor: text;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+        animation: aboutcon linear ;
+        animation-timeline: view();
+        animation-range: 0% cover 30%;
+    }
+    .pros h1 {
+        -webkit-text-stroke: 0.5px rgba(0, 128, 0, 0.5);
+    }
+    main-content .proscons h1 {
+        position: relative;
+        top: 1em;
+        text-align: center;
+        display: block;
+        font-size: 1em;
+        color: white;
+        cursor: pointer;
+        font-family: "Sriracha", sans-serif;
+        user-select: none;
+    }
+    main-content .pros:hover {
+        background-color: #0C0C0C;
+        transform: scale(1.05);
+    }
+    main-content .pros-text {
+        display: block;
+        margin-top: 1rem;
+        font-size: .7em; 
+        line-height: 1.8em;
+    }
+    main-content .cons {
+        position: relative;
+        top: -22rem;
+        left: 26.2rem;
+        width: 22em;
+        height: 22em;
+        background-color: #0c0c0cc6;
+        border-radius: 5em; 
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        animation: aboutcon linear ;
+        animation-timeline: view();
+        animation-range: 0% cover 30%;
+        -webkit-text-stroke: 0.25px rgba(255, 0, 0, 0.5);
+        user-select: none;
+    }
+    
+    main-content .weakness-text {
+        position: absolute;
+        color: white;
+        left: -2.5em;
+        top: -2em;
+        text-transform: uppercase;
+        display: none;
+    }
+    main-content .cons:hover .weakness-text{
+        display: flex;
+        animation: pop-up-text 0.5s ease-in-out;
+    }
+    main-content .cons .img-ble {
+        width: 13em;
+        height: 9em;
+        position: absolute;
+        top: 12em;
+        left: 4.5em;
+        border-radius: 20px;
+        display: none;
+        animation: pop-up-img 1.2s ease-in-out;
+    }
+    main-content .cons:hover .img-ble {
+        display: flex;
+    }
+    @keyframes pop-up-text {
+        from {
+            opacity: 0;
+            scale: 0.9;
+            transform: translateX(-60px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(1);
+        }
+    }
+    @keyframes pop-up-img {
+        from {
+            opacity: 0;
+            transform: rotateX(90deg);
+        }
+        to {
+            opacity: 1;
+            transform: rotateX(1);
+            scale: 1;
+        }
+    }
+    main-content .weakness-text .text {
+        font-size: 3em;
+        position: absolute;
+        top: 2.5em;
+        left: 3em;
+    }
+    main-content .weakness-text .text1 {
+        font-size: 2em;
+        position: absolute;
+        top: 5.5em;
+        left: 2.55em;
+        width: 10em;
+    }
+    main-content .cons:hover {
+        background-color: #0c0c0c;
+        transform: scale(1.05);
+    }
+    main-content .con-blur:hover > :not(:hover){
+        filter: blur(2px);
+    }
+
     /*                LEFT SIDE CONTAINER     */
 
     .parent {
